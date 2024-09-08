@@ -42,7 +42,7 @@ class VideoPostScreen extends StatefulWidget {
 
 class _VideoPostScreenState extends State<VideoPostScreen> {
   void _shareUrl() {
-    final url = 'https://flutter.dev';
+    final url = 'https://deep-linking.pages.dev';
     Share.share(url);
   }
 

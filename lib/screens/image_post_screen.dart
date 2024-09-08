@@ -5,7 +5,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 class ImagePostScreen extends StatelessWidget {
   void _shareUrl() {
-    final url = 'https://flutter.dev';
+    final url = 'https://deep-linking.pages.dev';
     Share.share(url);
   }
 

@@ -40,7 +40,7 @@
                 <!-- Handle links to https://flutter.dev -->
                 <data
                     android:scheme="https"
-                    android:host="flutter.dev" />
+                    android:host="deep-linking.pages.dev" />
             </intent-filter>
 
         </activity>
