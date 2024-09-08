@@ -10,7 +10,7 @@
 
 //   @override
 //   Widget build(BuildContext context) {
-//     return Center(git 
+//     return Center(git
 //       child: Column(
 //         mainAxisAlignment: MainAxisAlignment.center,
 //         children: [
@@ -87,7 +87,7 @@ class _VideoPostScreenState extends State<VideoPostScreen> {
                   : CircularProgressIndicator(),
             ),
           ),
-          SizedBox(height: 20.h),
+          SizedBox(height: 18.h),
           ElevatedButton.icon(
             onPressed: _shareUrl,
             icon: Icon(Icons.share),
