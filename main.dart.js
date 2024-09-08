@@ -57952,7 +57952,7 @@ S(a){var s,r=this,q=null,p=$.k5().glo()
 if(r.e){s=r.d
 s===$&&A.d()
 s=new A.xB(J.afy(s.a),new A.ur(r.d,q),q)}else s=new A.px(q,q,q,q,q,q,q)
-p=A.Nc(A.a([A.yq(q,A.y0(s,q,q),q,q,q,300*p,q,q,1/0),A.jA(q,20*$.k5().glo(),q),A.a4X(A.QS(B.fe),A.Di("Share",q,q),r.gSY())],t.E),B.dK,B.cq)
+p=A.Nc(A.a([A.yq(q,A.y0(s,q,q),q,q,q,300*p,q,q,1/0),A.jA(q,18*$.k5().glo(),q),A.a4X(A.QS(B.fe),A.Di("Share",q,q),r.gSY())],t.E),B.dK,B.cq)
 s=r.d
 s===$&&A.d()
 return A.aa6(p,q,A.a8D(A.QS(s.a.f?B.yx:B.yy),!1,new A.a2d(r)))}}
