@@ -1,4 +1,6 @@
 import 'dart:async';
+import 'dart:io';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mindlink_assignment/screens/home_screen.dart';
@@ -22,7 +24,10 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
-    _handleIncomingLinks();
+    if (!kIsWeb && (Platform.isAndroid || Platform.isIOS)) {
+      _handleIncomingLinks();
+    }
+    // _handleIncomingLinks();
   }
 
   void _handleIncomingLinks() {

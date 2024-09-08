@@ -1,21 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:share_plus/share_plus.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 class ImagePostScreen extends StatelessWidget {
-  final String postUrl = "https://example.com/image-post"; // Replace with your URL logic
-
-  void _sharePost(BuildContext context) {
-    final Uri postUri = Uri.parse(postUrl);
-    _launchUrl(postUri);
-  }
-
-  void _launchUrl(Uri url) async {
-    if (await canLaunchUrl(url)) {
-      await launchUrl(url);
-    } else {
-      throw 'Could not launch $url';
-    }
+  void _shareUrl() {
+    final url = 'https://flutter.dev';
+    Share.share(url);
   }
 
   @override
@@ -24,14 +15,10 @@ class ImagePostScreen extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text(
-            'This is an Image Post',
-            style: TextStyle(fontSize: 24.sp),
-          ),
+          Image.asset('assets/image/image.png'),
           SizedBox(height: 20.h),
           ElevatedButton.icon(
-            onPressed: () {},
-            //=> _sharePost(context),
+            onPressed: _shareUrl,
             icon: Icon(Icons.share),
             label: Text('Share'),
           ),
