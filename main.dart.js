@@ -57925,11 +57925,11 @@ A.a_Z.prototype={
 $0(){this.a.d=this.b},
 $S:0}
 A.qM.prototype={
-Qn(){A.CO("https://deep-linking.pages.dev")},
+Qn(){A.CO("https://deep-linking.pages.dev/image")},
 S(a){var s=null
 return A.y0(A.Nc(A.a([new A.qK(A.ajT(s,s,new A.pf("assets/image/image.png",s,s)),s),A.jA(s,20*$.k5().glo(),s),A.a4X(A.QS(B.fe),A.Di("Share",s,s),this.gQm())],t.E),B.dK,B.cq),s,s)}}
 A.u9.prototype={
-Tk(){A.CO("https://deep-linking.pages.dev")},
+Tk(){A.CO("https://deep-linking.pages.dev/text")},
 S(a){var s=null,r=$.k5(),q=r.f
 q=q==null?s:q.$2(24,r)
 if(q==null){if(!$.adG().$0())r=1
