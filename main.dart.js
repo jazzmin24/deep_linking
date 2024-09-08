@@ -57939,7 +57939,7 @@ return A.y0(A.Nc(A.a([new A.h7(B.ya,A.Di("The greatest glory in living lies not 
 A.ut.prototype={
 am(){return new A.wJ(B.o)}}
 A.wJ.prototype={
-SZ(){A.CO("https://deep-linking.pages.dev")},
+SZ(){A.CO("https://deep-linking.pages.dev/video")},
 aO(){this.ba()
 var s=new A.DM("assets/video/video.mp4",B.Lt,$.aQ())
 s.dU(0).aZ(new A.a2f(this),t.P).hR(new A.a2g())
