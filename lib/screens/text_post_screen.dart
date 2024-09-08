@@ -4,7 +4,7 @@ import 'package:share_plus/share_plus.dart';
 
 class TextPostScreen extends StatelessWidget {
   void _shareUrl() {
-    final url = 'https://deep-linking.pages.dev';
+    final url = 'https://deep-linking.pages.dev/text';
     Share.share(url);
   }
 

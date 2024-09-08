@@ -6,6 +6,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:mindlink_assignment/screens/home_screen.dart';
 import 'package:mindlink_assignment/screens/image_post_screen.dart';
 import 'package:mindlink_assignment/screens/text_post_screen.dart';
+import 'package:mindlink_assignment/screens/video_post_screen.dart';
 import 'package:uni_links2/uni_links.dart';
 
 void main() {
@@ -44,10 +45,25 @@ class _MyAppState extends State<MyApp> {
   void _navigateToPost(Uri uri) {
     // Use uri.path to determine which screen to navigate to
     if (uri.host == 'deep-linking.pages.dev') {
-      Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => ImagePostScreen()),
-      );
+      if (uri.path == '/text') {
+        // Navigate to TextPostScreen
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => TextPostScreen()),
+        );
+      } else if (uri.path == '/image') {
+        // Navigate to ImagePostScreen
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => ImagePostScreen()),
+        );
+      } else {
+        // Navigate to VideoPostScreen
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => VideoPostScreen()),
+        );
+      }
     }
   }
 

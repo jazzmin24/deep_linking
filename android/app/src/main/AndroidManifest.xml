@@ -32,15 +32,21 @@
             </intent-filter>
 
             <!-- Deep Linking Configuration for https://flutter.dev -->
-            <intent-filter>
+            <intent-filter android:autoVerify="true">
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
                 
-                <!-- Handle links to https://flutter.dev -->
+                <!-- Handle links for text posts -->
                 <data
                     android:scheme="https"
-                    android:host="deep-linking.pages.dev" />
+                    android:host="deep-linking.pages.dev"
+                    android:path="/text" />
+                <!-- Handle deep links for image posts -->
+                <data
+                    android:scheme="https"
+                    android:host="deep-linking.pages.dev"
+                    android:path="/image" />    
             </intent-filter>
 
         </activity>
