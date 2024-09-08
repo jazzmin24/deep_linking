@@ -57,7 +57,7 @@ class _MyAppState extends State<MyApp> {
           context,
           MaterialPageRoute(builder: (context) => ImagePostScreen()),
         );
-      } else {
+      } else if (uri.path == '/video'){
         // Navigate to VideoPostScreen
         Navigator.push(
           context,

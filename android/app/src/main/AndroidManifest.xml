@@ -47,6 +47,11 @@
                     android:scheme="https"
                     android:host="deep-linking.pages.dev"
                     android:path="/image" />    
+                <!-- Handle deep links for video posts -->
+                <data
+                    android:scheme="https"
+                    android:host="deep-linking.pages.dev"
+                    android:path="/video" />                      
             </intent-filter>
 
         </activity>
